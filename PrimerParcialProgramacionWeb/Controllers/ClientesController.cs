@@ -83,7 +83,7 @@ namespace PrimerParcialProgramacionWeb.Controllers
             return "El cliente se registró correctamente.";
         }
 
-        [HttpPost("EditarCliente")]
+        [HttpPut("EditarCliente")]
         public string EditarCliente(string nombre, string apellido, string email, string telefono, string direccion, string contraseña, int id)
         {
             try

@@ -95,7 +95,7 @@ namespace PrimerParcialProgramacionWeb.Controllers
             }
         }
 
-        [HttpPost("EditarProducto")]
+        [HttpPut("EditarProducto")]
         public string EditarCliente(string nombre, long precio, string imagen, string categoria, int stock, string descripcion, int id)
         {
             try
@@ -130,7 +130,7 @@ namespace PrimerParcialProgramacionWeb.Controllers
             return "El producto se editó correctamente.";
         }
 
-        [HttpPost("DeleteProducto")]
+        [HttpDelete("DeleteProducto")]
         public string EliminarProducto(int id)
         {
             try
